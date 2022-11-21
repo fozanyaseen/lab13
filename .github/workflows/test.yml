@@ -1,4 +1,4 @@
-name: testing
+name: test
 run-name: testing dabackend
 on:
   push:
@@ -11,5 +11,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm ci
+      - run: npm insttall
       - run: npm run test
